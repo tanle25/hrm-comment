@@ -9,7 +9,7 @@ use Livewire\Livewire;
 use Illuminate\Support\ServiceProvider;
 use Illuminate\Support\Facades\File;
 
-include_once('hrm_time_helper.php');
+// include_once('hrm_time_helper.php');
 class CommentServiceProvider extends ServiceProvider{
 
     public function boot()
@@ -17,9 +17,9 @@ class CommentServiceProvider extends ServiceProvider{
         $this->loadRoutesFrom(__DIR__.'/routes.php');
         Livewire::component('form-component', FormComponent::class);
         Livewire::component('reply-component', ReplyComponent::class);
-        if (File::exists(__DIR__ . '\hrm_time_helper.php')) {
-            require __DIR__ . '\hrm_time_helper.php';
-        }
+        // if (File::exists(__DIR__ . '\hrm_time_helper.php')) {
+        //     require __DIR__ . '\hrm_time_helper.php';
+        // }
 
     }
 
@@ -34,5 +34,6 @@ class CommentServiceProvider extends ServiceProvider{
         $this->publishes([__DIR__.'/Config'=>config_path()],'config');
         // $this->publishes([__DIR__.'/Public/js'=>public_path('js','js')],'public');
         $this->publishes([__DIR__.'/Public/images'=>public_path('images','image')],'public');
+        $this->publishes([__DIR__.'/Helper'=>app_path('Helper','helper')],'helper');
     }
 }

@@ -6,7 +6,7 @@
             "Hrm\\LaravelComment\\": "src/"
         },
         "files": [
-            "src/app/hrm_time_helper.php"
+            "src/Helper/hrm_time_helper.php"
         ]
     },
     "authors": [
