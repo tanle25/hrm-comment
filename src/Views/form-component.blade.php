@@ -124,7 +124,7 @@
                     <form id="parentReply" wire:submit.prevent='reply' class="flex">
                         <div class="relative flex-1">
                             <button type="button" class="absolute right-3 dark:text-white text-2xl h-full btn-picker"><i class="fa-light fa-face-smile"></i></button>
-                            <input wire:model='content' type="text" id="last_name" class="txt-content bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="comment" required>
+                            <input wire:model='replyContent' type="text" id="last_name" class="txt-content bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="comment" required>
                         </div>
                         <button type="submit" class="text-blue-600 px-5 text-2xl hover:text-black dark:hover:text-white"><i class="fa-light fa-paper-plane"></i></button>
                     </form>

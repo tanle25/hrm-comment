@@ -12,7 +12,7 @@ class FormComponent extends Component{
     public $content, $model, $amount = 5;
     public $comments, $showReplyForm = false;
     public $emotion, $reactComment, $replyTo=null;
-    public $comment = null;
+    public $comment = null, $replyContent;
     protected $listeners = ['refresh' => 'refresh','hasMore'=>'hasMore'];
 
     public function mount($model)
@@ -62,9 +62,9 @@ class FormComponent extends Component{
         # code...
         $this->replyTo->comments()->create([
             'user_id'=>Auth::user()->id,
-            'content'=>$this->content,
+            'content'=>$this->replyContent,
         ]);
-        $this->content = '';
+        $this->replyContent = '';
         $this->model->refresh();
         $this->comments = $this->model->comments->sortByDesc('created_at')->take($this->amount);
 
