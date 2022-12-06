@@ -153,7 +153,7 @@
     <div wire:ignore class="pickerContainer"></div>
 </div>
 @push('script')
-    <script src="{{ asset('js/emotion-tooltip.js') }}"></script>
+    {{-- <script src="{{ asset('js/emotion-tooltip.js') }}"></script> --}}
     <script src="https://cdn.jsdelivr.net/npm/emoji-mart@latest/dist/browser.js"></script>
     <script type="module">
         var input = null;
