@@ -1,0 +1,26 @@
+{
+    "name": "hrm/laravel-comment",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Hrm\\LaravelComment\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Tan Le",
+            "email": "tanltps04690@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "livewire/livewire": "dev-master"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Hrm\\LaravelComment\\CommentServiceProvider"
+            ]
+        }
+    }
+}
