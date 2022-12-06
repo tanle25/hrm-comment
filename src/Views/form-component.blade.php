@@ -68,8 +68,7 @@
                             <div class="flex-1 pl-1">
                                 <div class="text-base font-semibold text-gray-600 dark:text-gray-300">
                                     {{ $comment->author->name }}<span
-                                        class="text-sm font-normal text-gray-500 dark:text-gray-300">- Feb 11,
-                                        2022</span>
+                                        class="text-sm font-normal text-gray-500 dark:text-gray-300"> - {{hrmFormatTime($comment->created_at)}}</span>
                                 </div>
                                 <div class="text-sm text-gray-600 dark:text-gray-300">
                                     {{ $comment->content }}
@@ -134,7 +133,7 @@
         </div>
     </section>
     <form wire:ignore wire:submit.prevent='reaction'>
-        <div class="emotions-container hidden hover:block absolute rounded-xl bg-white">
+        <div class="emotions-container hidden hover:block absolute rounded-xl shadow-xl bg-white">
             <input wire:model='reactComment' type="hidden" id="comment-id" name="comment_id" value="">
             <div class="flex py-2 px-1.5">
                 @foreach (config('hrm_comment.emotions') as $key => $emotion)

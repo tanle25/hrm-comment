@@ -7,7 +7,9 @@ use Hrm\LaravelComment\Livewire\FormComponent;
 use Hrm\LaravelComment\Livewire\ReplyComponent;
 use Livewire\Livewire;
 use Illuminate\Support\ServiceProvider;
+use Illuminate\Support\Facades\File;
 
+include_once('hrm_time_helper.php');
 class CommentServiceProvider extends ServiceProvider{
 
     public function boot()
@@ -15,6 +17,10 @@ class CommentServiceProvider extends ServiceProvider{
         $this->loadRoutesFrom(__DIR__.'/routes.php');
         Livewire::component('form-component', FormComponent::class);
         Livewire::component('reply-component', ReplyComponent::class);
+        if (File::exists(__DIR__ . '\app\hrm_time_helper.php')) {
+            require __DIR__ . '\app\hrm_time_helper.php';
+        }
+
     }
 
     public function register()

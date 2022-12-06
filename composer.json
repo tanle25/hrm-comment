@@ -4,7 +4,10 @@
     "autoload": {
         "psr-4": {
             "Hrm\\LaravelComment\\": "src/"
-        }
+        },
+        "files": [
+            "src/app/hrm_time_helper.php"
+        ]
     },
     "authors": [
         {

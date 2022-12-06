@@ -10,9 +10,10 @@
                     class="object-cover w-10 h-10 mx-auto rounded-full" />
             </div>
         </div>
+        {{-- {{hrmFormatTime($reply->created_at)}} --}}
         <div class="flex-1">
             <div class="text-base font-semibold text-gray-600 dark:text-gray-300">{{$reply->author->name}} <span
-                    class="text-sm font-normal text-gray-500 dark:text-gray-300">- Feb 11, 2022</span></div>
+                    class="text-sm font-normal text-gray-500 dark:text-gray-300">- {{hrmFormatTime($reply->created_at)}}</span></div>
             <div class="text-sm text-gray-600 dark:text-gray-300">
                 {{$reply->content}}
             </div>
