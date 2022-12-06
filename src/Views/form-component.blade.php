@@ -178,7 +178,7 @@
         });
         $(document).on('click', '.btn-picker', function(){
             var offset = $(this).offset();
-            var top = offset.top + 40;
+            var top = offset.top - ($(picker).height() + 20);
             var left = offset.left - $(picker).width();
             input = $(this).parents('form').find('.txt-content');
 
