@@ -6,13 +6,19 @@
 [Tailwind](https://tailwindcss.com/docs/installation)
 
 # Cài đặt
-`composer require hrm/laravel-comment`
+```bash
+composer require hrm/laravel-comment
+```
 ## Publish 
-`php artisan vendor:publish --tag=comments`
+```bash
+php artisan vendor:publish --tag=comments
+```
 
 ## Migrations
 
-`php artisan migrate`
+```bash 
+php artisan migrate
+```
 
 Thêm Trait vào Model
 
