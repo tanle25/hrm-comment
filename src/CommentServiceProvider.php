@@ -29,11 +29,11 @@ class CommentServiceProvider extends ServiceProvider{
             return new Comment();
         });
         $this->loadMigrationsFrom(__DIR__.'/Migrations');
-        $this->publishes([__DIR__.'/Views'=>resource_path('views/vendor/hrm/comment','view')],'views');
-        $this->publishes([__DIR__.'/Emotions'=>storage_path('app/public/emotions','emotions')],'emotions');
-        $this->publishes([__DIR__.'/Config'=>config_path()],'config');
+        $this->publishes([__DIR__.'/Views'=>resource_path('views/vendor/hrm/comment','view')],'comments');
+        $this->publishes([__DIR__.'/Emotions'=>storage_path('app/public/emotions','emotions')],'comments');
+        $this->publishes([__DIR__.'/Config'=>config_path()],'comments');
         // $this->publishes([__DIR__.'/Public/js'=>public_path('js','js')],'public');
-        $this->publishes([__DIR__.'/Public/images'=>public_path('images','image')],'public');
-        $this->publishes([__DIR__.'/Helper'=>app_path('Helper','helper')],'helper');
+        $this->publishes([__DIR__.'/Public/images'=>public_path('images','image')],'comments');
+        $this->publishes([__DIR__.'/Helper'=>app_path('Helper','helper')],'comments');
     }
 }

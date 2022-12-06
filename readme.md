@@ -8,15 +8,7 @@
 # Cài đặt
 `composer require hrm/laravel-comment`
 ## Publish 
-`php artisan vendor:publish --tag=public`
-
-`php artisan vendor:publish --tag=views`
-
-`php artisan vendor:publish --tag=emotions`
-
-`php artisan vendor:publish --tag=config`
-
-`php artisan vendor:publish --tag=helper`
+`php artisan vendor:publish --tag=comments`
 
 ## Migrations
 
@@ -45,10 +37,19 @@ Thêm helper vào `composer.json` như mẫu dưới
 
 ## Cách dùng
 
+### Thêm componnent
 Thêm commponent sau vào nơi hiển thị comment
 `$post` là model của bạn
 
 `<livewire:form-component :model="$post" :key="time().$post->id">`
+
+### Thay đổi định dạng thời gian comment
+
+mở file `app/Helper/hrm_time_helper.php`
+
+thay đổi nội dung trong function `hrmFormatTime()`
+
+
 
 
 
