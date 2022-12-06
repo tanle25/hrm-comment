@@ -17,8 +17,8 @@ class CommentServiceProvider extends ServiceProvider{
         $this->loadRoutesFrom(__DIR__.'/routes.php');
         Livewire::component('form-component', FormComponent::class);
         Livewire::component('reply-component', ReplyComponent::class);
-        if (File::exists(__DIR__ . '\app\hrm_time_helper.php')) {
-            require __DIR__ . '\app\hrm_time_helper.php';
+        if (File::exists(__DIR__ . '\hrm_time_helper.php')) {
+            require __DIR__ . '\hrm_time_helper.php';
         }
 
     }
