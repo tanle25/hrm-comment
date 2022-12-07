@@ -49,6 +49,8 @@ Thêm commponent sau vào nơi hiển thị comment
 
 `<livewire:form-component :model="$post" :key="time().$post->id">`
 
+Thêm `@stack('script)` vào layout của bạn
+
 ### Thay đổi định dạng thời gian comment
 
 mở file `app/Helper/hrm_time_helper.php`

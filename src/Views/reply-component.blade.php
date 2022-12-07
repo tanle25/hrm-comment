@@ -27,7 +27,7 @@
                     </svg>
                     <span class="font-semibold">{{$reply->comments->count()}} Reply</span>
                 </a>
-                <a href="#" class="flex emotion items-center text-red-500 hover:text-red-600 group" data-comment="{{$reply->id}}">
+                <a href="javascript:;" class="flex emotion items-center text-red-500 hover:text-red-600 group" data-comment="{{$reply->id}}">
                     <svg xmlns="http://www.w3.org/2000/svg"
                         class="h-4 w-4 group-hover:text-red-600 mr-1" viewBox="0 0 20 20"
                         fill="currentColor">
