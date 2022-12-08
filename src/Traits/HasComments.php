@@ -4,7 +4,7 @@ namespace Hrm\LaravelComment\Traits;
 
 use Hrm\LaravelComment\Models\Comment;
 
-trait HasComment
+trait HasComments
 {
     public function comments()
     {
