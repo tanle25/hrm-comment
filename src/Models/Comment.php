@@ -3,9 +3,9 @@
 namespace Hrm\LaravelComment\Models;
 
 use App\Models\User;
+use Illuminate\Database\Eloquent\Model;
 use Hrm\LaravelComment\Traits\HasComment;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
-use Illuminate\Database\Eloquent\Model;
 
 class Comment extends Model
 {
