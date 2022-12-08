@@ -4,12 +4,12 @@ namespace Hrm\LaravelComment\Models;
 
 use App\Models\User;
 use Illuminate\Database\Eloquent\Model;
-use Hrm\LaravelComment\Traits\HasComment;
+use Hrm\LaravelComment\Traits\HasComments;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 
 class Comment extends Model
 {
-    use HasFactory, HasComment;
+    use HasFactory, HasComments;
     protected $guarded = ['id'];
 
     public function commentable()
