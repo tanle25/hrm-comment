@@ -22,7 +22,7 @@ php artisan migrate
 
 Thêm Trait vào Model
 
-`use HasComment;`
+`use HasComments;`
 
 Thêm helper vào `composer.json` như mẫu dưới
 

@@ -17,6 +17,9 @@
     ],
     "minimum-stability": "dev",
     "require": {
+
+    },
+    "require-dev":{
         "livewire/livewire": "dev-master"
     },
     "extra": {

@@ -22,6 +22,7 @@ class ComposerStaticInit9db9256a470b9ed9b67e83918172a1ce
         'b6b991a57620e2fb6b2f66f03fe9ddc2' => __DIR__ . '/..' . '/symfony/string/Resources/functions.php',
         '667aeda72477189d0494fecd327c3641' => __DIR__ . '/..' . '/symfony/var-dumper/Resources/functions/dump.php',
         '40275907c8566c390185147049ef6e5d' => __DIR__ . '/..' . '/livewire/livewire/src/helpers.php',
+        '8168dfa1608840d6694ed5a905a6aa65' => __DIR__ . '/../..' . '/src/Helper/hrm_time_helper.php',
     );
 
     public static $prefixLengthsPsr4 = array (
@@ -217,9 +218,9 @@ class ComposerStaticInit9db9256a470b9ed9b67e83918172a1ce
         ),
         'Illuminate\\Support\\' => 
         array (
-            0 => __DIR__ . '/..' . '/illuminate/conditionable',
-            1 => __DIR__ . '/..' . '/illuminate/macroable',
-            2 => __DIR__ . '/..' . '/illuminate/collections',
+            0 => __DIR__ . '/..' . '/illuminate/collections',
+            1 => __DIR__ . '/..' . '/illuminate/conditionable',
+            2 => __DIR__ . '/..' . '/illuminate/macroable',
             3 => __DIR__ . '/..' . '/illuminate/support',
         ),
         'Illuminate\\Filesystem\\' => 
