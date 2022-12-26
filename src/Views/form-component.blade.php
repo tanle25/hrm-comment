@@ -156,6 +156,7 @@
     <script src="https://cdn.jsdelivr.net/npm/emoji-mart@latest/dist/browser.js"></script>
     <script type="module">
         var input = null;
+        var picker;
         const pickerOptions = {
             onEmojiSelect: (e)=>{
                 if (input) {
@@ -167,7 +168,10 @@
             },
             previewPosition:'none'
         }
-        const picker = new EmojiMart.Picker(pickerOptions)
+        if(!picker){
+            picker = new EmojiMart.Picker(pickerOptions)
+
+        }
         var emojiButton = document.querySelector('.btn-picker');
         $(picker).css({'position':'absolute','display':'none'});
         $(picker).addClass('picker-popup');
